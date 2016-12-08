@@ -1,0 +1,11 @@
+def sensitivity(ListOfLists):
+    output = []
+    for i in ListOfLists:
+        listLength = len(i)
+        newlist = np.random.choice(i, listLength, replace = False)
+        output.append(newlist)
+    return(output)
+
+#ListOfLists is how I figured the components and were/could be setup
+#All the function does is randomly create a new order for the components and options
+#I left the aggregation up to you
